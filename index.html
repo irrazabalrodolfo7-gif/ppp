@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cfp N°6 "La Criolla"</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"><!--Link de mi fuente de letra-->
+
+  
+    <link rel="stylesheet" href="./estilos.css">
+
+    <link rel="icon" href="../FINAl-PPP/img/logo_principal.jpg" type="image/png">
+
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+    
+        <!-- LOGO + INICIO -->
+        <a class="navbar-brand d-flex align-items-center" href="#inicio">
+          <img src="./img/logo_principal.jpg" alt="Logo" width="45" height="45" class="logo-redondo me-2">
+          Inicio
+        </a>
+    
+        <!-- BOTÓN MOBILE -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- MENÚ -->
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+            <li class="nav-item">
+              <a class="nav-link" href="#informacion">Información</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ubicacionycontacto">Ubicación y contacto</a>
+            </li>
+    
+            <!-- DROPDOWN -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#trayecto" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Trayectos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#pastelero">Pastelero</a></li>
+                <li><a class="dropdown-item" href="#peluquero">Peluquero</a></li>
+                <li><a class="dropdown-item" href="#orgdeeventos">Org de Eventos</a></li>
+                <li><a class="dropdown-item" href="#modista">Modista/o</a></li>
+                <li><a class="dropdown-item" href="#amre">A.M.R.E</a></li>
+                <li><a class="dropdown-item" href="#cas">Ciclo Adolescente Soldador</a></li>
+                <li><a class="dropdown-item" href="#marroquinero">Marroquinera/o</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+    
+      </div>
+      <button class="btn-login" id="loginBtn">Iniciar sesión</button>
+    </nav>
+    
+    
+<!-- cierre de navegación -->
+
+<main>
+  <div id="inicio"  class="seccion" >
+
+ <H1>Veni a y forma parte de los distintos trayectos de "la criolla"</H1>
+ <p>El CFP N°61 de La Criolla brinda formación profesional gratuita para jóvenes y adultos, ofreciendo oficios con rápida salida laboral como pastelería, peluquería, soldadura, organización de eventos, modista y más. ¡Capacitate y ampliá tus oportunidades laborales!</p>
+ <p>A continuacion podes observar las distintas especialidades que tenemos dispnibles si te interesaa alguna buscala en trayectos:</p>
+
+ <!-- carrusel -->
+
+ <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+  <div class="carousel-inner">
+    
+    <!-- FOTO 1 (ACTIVA) -->
+    <div class="carousel-item active">
+      <img src="./img/Peluquero.jpeg" class="d-block w-100" alt="Foto 1 peluqueria">
+    </div>
+
+    <!-- FOTO 2 -->
+    <div class="carousel-item">
+      <img src="./img/Pastelero.jpeg" class="d-block w-100" alt="Foto  pastelero">
+    </div>
+
+    <!-- FOTO 3 -->
+    <div class="carousel-item">
+      <img src="./img/Org de eventos.jpeg" class="d-block w-100" alt="Foto Org de eventos">
+    </div>
+
+    <!-- FOTO 4 -->
+    <div class="carousel-item">
+      <img src="./img/Soldador basico.jpeg" class="d-block w-100" alt="Foto soldador basico">
+    </div>
+
+    <!-- FOTO 5 -->
+    <div class="carousel-item">
+      <img src="./img/Reparacion_de_electronomesticos.jpeg" class="d-block w-100" alt="Reparacion de electrodomésticos">
+    </div>
+
+    <!-- FOTO 6 -->
+    <div class="carousel-item">
+      <img src="./img/Marroquinero.jpeg" class="d-block w-100" alt="Foto Marroquinero">
+    </div>
+
+    <!-- FOTO 7 -->
+    <div class="carousel-item">
+      <img src="./img/Modista.jpeg" class="d-block w-100" alt="Foto modista">
+    </div>
+
+  </div>
+
+  <!-- BOTONES -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Siguiente</span>
+  </button>
+</div>
+
+<!-- cierre de carrusel -->
+
+
+  </div>
+  <div id="informacion" class="seccion" >
+    
+    <h1>Información</h1>
+
+    <p>
+      El <strong>Centro de Formación Profesional N° 61 de La Criolla</strong> es una institución educativa de la provincia de Entre Ríos que pertenece a la <strong>Dirección de Educación de Jóvenes y Adultos</strong>. Su misión principal es brindar <strong>trayectos formativos gratuitos con rápida salida laboral</strong>, destinados a jóvenes y adultos que buscan obtener un oficio, perfeccionar sus capacidades o mejorar sus oportunidades de empleo en la región.
+    </p>
+    
+    <p>
+      Se encuentra ubicado en la localidad de <strong>La Criolla</strong>, departamento de <strong>Concordia</strong> (Entre Ríos), más precisamente en <strong>calle Río Bermejo 278</strong>. La institución trabaja de manera articulada con el municipio, instituciones educativas de la zona y el sector productivo local, promoviendo el desarrollo territorial y atendiendo a las demandas laborales concretas de la comunidad.
+    </p>
+    
+    <p>
+      El CFP N° 61 ofrece una amplia variedad de propuestas formativas vinculadas con <strong>servicios, industria y economía del cuidado</strong>. Entre los trayectos disponibles se destacan:
+      <strong>Pastelero/a</strong> y <strong>Peluquero/a</strong> (oficios con alta salida laboral en la actualidad),
+      <strong>Organizador/a de Eventos</strong>,
+      <strong>Modista/o</strong>,
+      <strong>Auxiliar en Reparación de Electrodomésticos</strong>,
+      <strong>Soldador</strong> (también desarrollado en el ciclo adolescente para estudiantes del nivel secundario),
+      <strong>Marroquinero/a</strong>, entre otros cursos que la institución incorpora de acuerdo a las necesidades de la población.
+    </p>
+    
+    <p>
+      Las capacitaciones cuentan con <strong>certificación oficial</strong> emitida por el Consejo General de Educación de Entre Ríos, lo que permite a quienes egresan desempeñarse de forma independiente o incorporarse al mercado laboral con mejores oportunidades.
+    </p>
+    
+    <p>
+      Además de la formación técnica, el CFP 61 promueve valores como el <strong>trabajo colaborativo</strong>, la <strong>responsabilidad</strong> y la <strong>inclusión social</strong>, garantizando el acceso a la educación profesional para todas las personas, sin distinción de edad, situación económica o trayectoria académica previa.
+    </p>
+    
+    <p>
+      <strong>La propuesta es clara: “¡Capacitate y abrí nuevas oportunidades laborales sin costo!”</strong>
+      La institución apuesta al crecimiento personal y profesional de cada estudiante, acompañando la producción local y aportando al desarrollo económico de la región.
+    </p>
+    <!--TRAYECTOS-->
+  </div>
+  <div id="trayecto"  class="seccion" >
+    <h1>TRAYECTOS</h1>
+    <p>
+      Los <strong>trayectos formativos</strong> del Centro de Formación Profesional N° 61 están diseñados para brindar a los estudiantes una preparación sólida que les permita desarrollar habilidades técnicas y profesionales con una <strong>alta salida laboral</strong>. Cada propuesta educativa responde a las demandas reales del mundo del trabajo y acompaña los avances de la industria y los servicios actuales.
+    </p>
+    
+    <p>
+      Estos trayectos están destinados a <strong>jóvenes y adultos</strong> que buscan capacitarse, actualizar conocimientos o mejorar sus oportunidades laborales. La formación es <strong>gratuita</strong>, está a cargo de docentes especializados y se desarrolla en espacios equipados para garantizar un aprendizaje de calidad.
+    </p>
+    
+    <p>
+      Cada curso combina <strong>contenidos teóricos y actividades prácticas</strong>. Durante la cursada, los estudiantes utilizan herramientas reales, realizan trabajos concretos y aprenden a resolver situaciones propias del oficio. También se promueve el trabajo en equipo, la comunicación, la responsabilidad y otras habilidades fundamentales para cualquier ámbito profesional.
+    </p>
+    
+    <p>
+      En el CFP N° 61 se ofrecen <strong>distintas áreas de formación</strong> que abarcan los sectores productivos más relevantes de la región. Entre ellas se destacan los trayectos de <strong>Electricidad</strong>, orientados a la instalación y mantenimiento de sistemas eléctricos domiciliarios y comerciales. Asimismo, se brindan cursos de <strong>Informática</strong>, que incluyen reparación de computadoras, redes y herramientas digitales esenciales.
+    </p>
+    
+    <p>
+      La institución también cuenta con ofertas en <strong>Mecánica</strong>, enfocadas en el diagnóstico y reparación de motores y maquinarias. Además, se dictan trayectos del área <strong>Gastronómica</strong>, donde los estudiantes aprenden técnicas de cocina y manipulación higiénica de alimentos, pudiendo desempeñarse en locales comerciales o emprendimientos propios.
+    </p>
+    
+    <p>
+      Otra de las áreas disponibles es la <strong>Textil</strong>, donde se enseñan conocimientos de corte, confección y diseño de indumentaria. Muchas personas encuentran en estos cursos una oportunidad para iniciar proyectos de producción y venta de prendas, fomentando la economía local. También se desarrollan trayectos vinculados a <strong>Carpintería y Herrería</strong>, con formación en la creación y reparación de estructuras y muebles para viviendas y comercios.
+    </p>
+    
+    <p>
+      Los trayectos se estructuran en <strong>módulos</strong> que facilitan el avance progresivo del aprendizaje. Al finalizar, los estudiantes reciben una <strong>certificación oficial</strong> que acredita los saberes adquiridos y es válida en toda la provincia. Esta certificación es una herramienta clave para quienes buscan trabajo o desean ofrecer servicios de manera independiente.
+    </p>
+    
+    <p>
+      El Centro de Formación Profesional N° 61 mantiene lazos con <strong>empresas, talleres y cooperativas</strong> de la zona, lo que permite generar oportunidades concretas de empleo y prácticas formativas. De esta manera, se asegura que los contenidos se mantengan actualizados y que los egresados respondan a las necesidades del sector productivo.
+    </p>
+    
+    <p>
+      La institución impulsa la <strong>inclusión y la igualdad de oportunidades</strong>, acompañando a aquellas personas que retoman estudios o inician un nuevo camino de aprendizaje. Se busca que cada estudiante pueda descubrir su potencial y construir un proyecto de vida mediante la educación y el trabajo.
+    </p>
+    
+    <p>
+      En resumen, los trayectos formativos del <strong>CFP N° 61</strong> representan una puerta abierta al crecimiento personal y laboral. Cada curso es una opción para aprender un oficio, emprender o acceder a un empleo formal. Capacitarse es apostar al futuro, y en La Criolla se trabaja día a día para que ese futuro sea posible para todos.
+    </p>    
+  </div>
+  <!-- TRAYECYO PASTELERO-->
+  <div id="pastelero" class="seccion trayecto">
+
+    <img src="./img/Pastelero.jpeg" alt="Imagen del trayecto">
+  
+    <div class="trayecto-contenido">
+  
+      <h1>Pastelero</h1>
+  
+      <p>
+        El <strong>Trayecto de Pastelero Profesional</strong> está orientado a todas aquellas personas que
+        desean aprender técnicas básicas y avanzadas de la pastelería moderna.
+      </p>
+      
+      <p>
+        Durante la formación se enseñan <strong>preparaciones como tortas, masas secas, productos de 
+        confitería, decoración con glasé y chocolate</strong>, además del uso de equipamiento profesional 
+        dentro de un laboratorio gastronómico.
+      </p>
+      
+      <p>
+        El estudiante adquiere capacidades para desempeñarse en <strong>panaderías, pastelerías, confiterías 
+        y servicios de catering</strong>, pudiendo también iniciar su propio emprendimiento gastronómico.
+      </p>
+      
+      <p>
+        Se fomenta el trabajo en equipo, la correcta manipulación de alimentos y la <strong>creatividad en 
+        la elaboración de productos dulces</strong> de calidad.
+      </p>
+  
+      <a href="#inicio" class="boton_volver">Volver al inicio</a>
+    
+    </div>
+  </div>
+  <!-- TRAYECYO Peluquero-->
+  <div id="peluquero" class="seccion trayecto">
+    <img src="./img/Peluquero.jpeg" alt="Imagen del trayecto">
+    <div class="trayecto-contenido">
+      <h1>Peluquero</h1>
+      <p><strong>Formación profesional integral:</strong> El trayecto de Peluquería está orientado a quienes desean adquirir conocimientos técnicos y artísticos para desempeñarse en el mundo de la belleza y el cuidado personal. Durante la capacitación, los estudiantes incorporan habilidades esenciales para brindar un servicio estético de calidad.</p>
+      <p><strong>Contenidos principales:</strong> Se enseña el correcto lavado, diagnóstico capilar, cortes clásicos y modernos, técnicas de brushing, uso de herramientas profesionales, peinados estructurados y recogidos, además de conocimientos sobre higiene, normas de bioseguridad y atención al cliente.</p>
+      <p><strong>Colorimetría y tratamientos:</strong> Se estudian distintos procesos químicos como tinturas, reflejos, mechas, alisados temporales, nutriciones y reparaciones capilares. El alumno aprende a evaluar el cabello y seleccionar los productos adecuados para mantener la salud capilar.</p>
+      <p><strong>Salida laboral garantizada:</strong> Al finalizar, el estudiante está capacitado para trabajar en salones de belleza, barberías, spas, o iniciar su propio emprendimiento, atendiendo clientes de forma independiente con profesionalismo y creatividad.</p>
+      <a href="#inicio" class="boton_volver">Volver al inicio</a>
+    </div>
+  </div>
+  
+  <!-- TRAYECYO org de eventos-->
+  <div id="orgdeeventos" class="seccion trayecto">
+    <img src="./img/Org de eventos.jpeg" alt="Imagen del trayecto">
+    <div class="trayecto-contenido">
+      <h1>Organizador de  eventos</h1>
+      <p><strong>Planificación estratégica:</strong> Este trayecto está dirigido a quienes desean formarse en la creación, diseño y coordinación de eventos sociales y empresariales. Se trabajan todas las etapas del proceso, desde la idea inicial hasta la evaluación final del evento.</p>
+      <p><strong>Producción y logística:</strong> El estudiante aprende a gestionar proveedores, presupuestos, cronogramas, seguridad, ambientación, recursos materiales y humanos, atendiendo las necesidades del cliente con enfoque profesional.</p>
+      <p><strong>Eventos sociales y corporativos:</strong> Se abordan distintos tipos de celebraciones: cumpleaños, bodas, aniversarios, ferias, conferencias, actos institucionales, lanzamientos y más, desarrollando creatividad y capacidad de resolución de problemas.</p>
+      <p><strong>Desarrollo emprendedor:</strong> El trayecto fomenta la capacidad de liderazgo, comunicación y marketing, preparando al alumno para crear su propio emprendimiento en el ámbito de los eventos o incorporarse a empresas del sector.</p>
+      <a href="#inicio" class="boton_volver">Volver al inicio</a>
+    </div>
+  </div>
+  
+  <!-- TRAYECYO MODISTA/O-->
+  <div id="modista" class="seccion trayecto">
+
+    <img src="./img/Modista.jpeg" alt="Imagen del trayecto">
+  
+    <div class="trayecto-contenido">
+      <h1>Modista</h1>
+      <p><strong>Diseño y confección textil:</strong> Este trayecto está destinado a quienes desean aprender a crear prendas de vestir, aplicando técnicas de moldería, costura y diseño. Se adquieren conocimientos sólidos sobre el uso de máquinas, herramientas y diferentes tejidos.</p>
+
+      <p><strong>Moldería y armado de prendas:</strong> Los estudiantes elaboran patrones básicos y avanzados para confeccionar faldas, blusas, pantalones, vestidos y prendas personalizadas, adaptadas a diversas tallas y necesidades del usuario.</p>
+      
+      <p><strong>Terminaciones de calidad:</strong> Se trabajan técnicas de costura prolija, cierres, botones, detalles decorativos y ajustes personalizados, asegurando que las prendas cumplan con altos estándares estéticos y funcionales.</p>
+      
+      <p><strong>Salidas laborales:</strong> Al finalizar, el alumno puede desempeñarse en talleres de confección, emprendimientos propios, arreglos de ropa o producción de vestimenta a medida para clientes.</p>
+       
+      <a href="#inicio" class="boton_volver">Volver al inicio</a>
+    </div>
+  </div>
+
+  <!-- TRAYECYO A.M.R.E-->
+  <div id="amre" class="seccion trayecto">
+
+    <img src="./img/Reparacion_de_electronomesticos.jpeg" alt="Imagen del trayecto">
+  
+    <div class="trayecto-contenido">
+      <h1>Reparacion de electronomesticos</h1>
+      <p><strong>Inicio técnico para jóvenes:</strong> Este trayecto introduce a los adolescentes en el área de la mecánica industrial y el mantenimiento de equipamiento, desarrollando habilidades prácticas para el mundo del trabajo.</p>
+
+      <p><strong>Conocimiento de herramientas:</strong> Se aprende el uso correcto y seguro de herramientas manuales y eléctricas, mediciones, ajustes y procedimientos básicos de reparación, fomentando la responsabilidad en el ámbito laboral.</p>
+      
+      <p><strong>Reparación y mantenimiento:</strong> Se abordan técnicas para detectar fallas en máquinas simples, realizar mantenimiento preventivo, armado, desarmado y sustitución de componentes en equipos utilizados en distintos sectores productivos.</p>
+      
+      <p><strong>Proyección futura:</strong> La formación prepara al estudiante para continuar trayectos técnicos superiores como mecánica general, industrial o automotriz, y para desarrollar aptitudes de trabajo en equipo y disciplina profesional.</p>      
+      <a href="#inicio" class="boton_volver">Volver al inicio</a>
+    </div>
+  </div>
+  
+<!-- TRAYECYO Ciclo soldador adolecente basico-->
+<div id="cas" class="seccion trayecto">
+  <img src="./img/Reparacion_de_electronomesticos.jpeg" alt="Imagen del trayecto">
+  <div class="trayecto-contenido">
+    <h1>Ciclo soldador adolecente basico</h1>
+    <p><strong>Técnicas fundamentales de soldadura:</strong> El trayecto brinda conocimientos teóricos y prácticos sobre procesos de soldadura, corte y uniones metálicas, con rigurosas medidas de seguridad y normas industriales.</p>
+    <p><strong>Procesos de trabajo:</strong> Se entrena al estudiante en soldadura eléctrica, MIG/MAG y Oxiacetilénica, preparación de piezas, interpretación de planos, y control de la calidad de las uniones.</p>
+    <p><strong>Prácticas intensivas:</strong> Se desarrollan proyectos reales aplicando diferentes tipos de metales y espesores, mejorando la precisión, resistencia y estética de las soldaduras.</p>
+    <p><strong>Amplio campo laboral:</strong> El trayecto habilita para trabajar en talleres, metalúrgicas, industrias de construcción y mantenimiento, o desempeñarse de manera autónoma como soldador calificado.</p>
+    <a href="#inicio" class="boton_volver">Volver al inicio</a>
+  </div>
+</div>
+
+  <!-- TRAYECYO Marroquinero-->
+  <div id="marroquinero" class="seccion trayecto">
+
+    <img src="./img/Marroquinero.jpeg" alt="Imagen del trayecto">
+  
+    <div class="trayecto-contenido">
+  
+      <h1>Marroquiner@</h1>
+  
+      <p><strong>Oficio artesanal y productivo:</strong> Este trayecto está orientado a la fabricación y reparación de artículos de cuero y materiales sintéticos, combinando tradición artesanal con técnicas modernas.</p>
+
+      <p><strong>Diseño y confección:</strong> Se enseña la creación de carteras, cinturones, billeteras, mochilas y accesorios personalizados, utilizando patrones, herramientas específicas y métodos de ensamblaje resistentes.</p>
+      
+      <p><strong>Acabados y calidad:</strong> Los alumnos aprenden técnicas de costura manual y a máquina, teñido, lustrado, colocación de herrajes, terminaciones profesionales y reparación de productos desgastados.</p>
+      
+      <p><strong>Emprendimiento:</strong> Se fomenta la capacidad de producción a pequeña escala, diseño propio y comercialización, permitiendo al estudiante iniciar su propio taller o integrarse a industrias del sector.</p>
+      
+  
+      <a href="#inicio" class="boton_volver">Volver al inicio</a>
+    
+    </div>
+  
+  </div>
+  
+  
+
+
+<div id="ubicacionycontacto"  class="seccion">
+
+<h1>UBICACION Y CONTACTO</h1>
+
+<!-- IFRAME RESPONSIVE: mapa buscando por texto -->
+<div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:8px;">
+  <iframe
+    src="https://www.google.com/maps?q=Centro%20de%20Formaci%C3%B3n%20Profesional%20N%C2%BA%2061%20La%20Criolla%2C%20Entre%20R%C3%ADos&output=embed"
+    style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+
+</div>
+
+
+<!-- Modal Login -->
+<div class="modal-backdrop" id="modalBackdrop">
+  <div class="modal">
+    <button class="close" id="closeModal">X</button>
+    <h3>Iniciar Sesión</h3>
+
+    <form id="loginForm">
+      <label>Email</label>
+      <input type="email" id="loginEmail" required>
+
+      <label>Contraseña</label>
+      <input type="password" id="loginPwd" required>
+
+      <button type="submit" class="btn-login" style="margin-top:10px;">Entrar</button>
+    </form>
+  </div>
+</div>
+
+
+</main>
+<!-- FOOTER -->
+<footer class="footer d-flex justify-content-center align-items-center">
+  <span class="footer-text">
+    Técnica 2 – Computación | Creado por: Nicolás Valentín Irrazabal – 5to Computación 2025 | © 2025 Todos los derechos reservados.
+  </span>
+</footer>
+
+
+
+
+
+
+
+<script>
+  // Selecciono todos los links que llevan a una sección (los que tienen href="#...")
+  const links = document.querySelectorAll('a[href^="#"]');
+
+  // Selecciono todas las secciones del main (las que tienen class="seccion")
+  const secciones = document.querySelectorAll(".seccion");
+
+  // Recorro los links uno por uno
+  links.forEach(link => {
+    // Cuando se hace click en un link...
+    link.addEventListener("click", () => {
+      
+      // Guardo el ID de la sección donde quiere ir el usuario
+      const destino = link.getAttribute("href");
+
+      // Oculto todas las secciones
+      secciones.forEach(sec => sec.hidden = true);
+
+      // Muestro solo la sección elegida
+      document.querySelector(destino).hidden = false;
+    });
+  });
+</script>
+
+
+<script src="./js/login.js"></script>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
+</html>

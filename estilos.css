@@ -1,0 +1,168 @@
+body{
+  background-color: rgb(10, 10, 71);
+  color: antiquewhite;
+  font-family: "Inter", sans-serif;
+
+  width: 99.9%;
+  margin: 1px auto;
+
+}
+
+.logo-redondo {
+  border-radius: 25%;
+  object-fit: cover;
+  border: 2px solid #fff; /* opcional */
+}
+
+
+/* Ajustar tamaño del carrusel */
+.carousel-item img {
+    width: 100%;
+    height: 450px; /* Ajustá este valor si querés más chico o grande */
+    /*object-fit: cover;  Recorta la imagen sin deformarla */
+    object-position: center; /* Centra la parte visible */
+   
+  }
+  
+  /* Para que el carrusel no se pegue a los costados */
+  #carouselExampleRide {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  main {
+    flex: 1;
+  }
+    
+  .navbar {
+    background: linear-gradient(90deg, #234e97, #4da0e9) !important;
+  }
+
+  
+   /* Footer normal sin flotar */
+footer {
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px 15px;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 15px;
+} 
+
+p, h1 {
+  padding-left: 12px;
+  padding-right: 12px;
+  text-align: justify;
+} 
+
+.btn-login {
+  background-color: #ffb703;
+  color: #000;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-login:hover {
+  background-color: #ffcd39;
+}
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background: #0b0b2b;
+  padding: 20px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 350px;
+  color: antiquewhite;
+}
+
+.close {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 18px;
+  float: right;
+  cursor: pointer;
+}
+  /* Botón volver al inicio - versión simple */
+  .boton_volver {
+    display: block;
+    margin: 25px auto 0 auto; /* arriba auto auto */
+    text-align: center;
+    width: fit-content;
+  
+    background-color: #f3bc3c !important;
+    color: #000 !important;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  /* Contenedor horizontal */
+
+/* === CONTENEDOR GENERAL DE CADA TRAYECTO === */
+.trayecto {
+  max-width: 1000px;  /* ancho máximo centrado */
+  margin: auto;
+  padding: 20px;
+  display: flex;      /* imagen + contenido en fila */
+  gap: 20px;          /* separación entre ambos */
+  align-items: flex-start;
+}
+
+/* === IMAGEN DEL TRAYECTO === */
+.trayecto img {
+  width: 40%;         /* ocupa aprox 2/5 de la pantalla */
+  border-radius: 10px;
+  object-fit: cover;
+  display: block;
+}
+
+/* === CONTENIDO: títulos + texto === */
+.trayecto-contenido {
+  width: 60%;         /* el resto del espacio */
+  text-align: justify;
+}
+
+/* === BOTÓN CENTRADO === */
+.boton_volver {
+  margin-top: 20px;
+  display: block;        /* para poder centrar */
+  width: fit-content;  
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #ffb100;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .trayecto {
+    flex-direction: column;  /* imagen arriba en celulares */
+    text-align: center;
+  }
+
+  .trayecto img {
+    width: 80%;              /* más grande en móvil */
+    margin: auto;
+  }
+
+  .trayecto-contenido {
+    width: 100%;
+    text-align: justify;
+  }
+}
