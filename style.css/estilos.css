@@ -1,3 +1,15 @@
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+
 body{
   background-color: rgb(10, 10, 71);
   color: antiquewhite;
@@ -164,5 +176,73 @@ p, h1 {
   .trayecto-contenido {
     width: 100%;
     text-align: justify;
+  }
+}
+#ubicacion-contacto {
+  margin: 40px auto;
+  max-width: 1200px;
+  text-align: center;
+  padding: 0 20px; /* margen interno para no pegarse a los bordes */
+}
+
+.contenedor-uc {
+  display: flex;
+  justify-content: center; /* centra todo */
+  align-items: flex-start;
+  gap: 30px; /* más cerca pero bien equilibrado */
+  flex-wrap: wrap;
+}
+
+.mapa iframe {
+  width: 500px; /* más grande */
+  height: 380px;
+  border: none;
+  border-radius: 10px;
+}
+
+.contacto {
+  background: rgba(255, 255, 255, 0.12);
+  padding: 25px;
+  border-radius: 12px;
+  width: 480px; /* más grande */
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.contacto input,
+.contacto textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 14px;
+  border-radius: 6px;
+  border: none;
+}
+
+.contacto button {
+  background: #007bff;
+  border: none;
+  color: white;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.contacto button:hover {
+  opacity: 0.9;
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width: 900px) {
+  .contenedor-uc {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mapa iframe,
+  .contacto {
+    width: 100%;
+    max-width: 480px;
   }
 }
