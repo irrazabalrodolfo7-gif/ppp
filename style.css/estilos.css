@@ -20,6 +20,22 @@ body{
 
 }
 
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.carousel img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+
+
 .logo-redondo {
   border-radius: 25%;
   object-fit: cover;
@@ -47,8 +63,27 @@ body{
     
   .navbar {
     background: linear-gradient(90deg, #234e97, #4da0e9) !important;
+  
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+  
+    min-height: 65px;      /* altura típica */
+    display: flex !important;
+    align-items: center !important;
   }
-
+  .logo-redondo {
+    height: 55px;        /* altura ideal para navbar */
+    width: auto;         /* respeta proporción */
+    border-radius: 25%;
+    object-fit: cover;
+  }
+  .navbar-nav .nav-link {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin-left: 12px;
+    color: rgb(0, 0, 0) !important;
+    font-weight: 500;
+  }
   
    /* Footer normal sin flotar */
 footer {
@@ -75,6 +110,11 @@ p, h1 {
   border-radius: 8px;
   cursor: pointer;
   font-weight: 600;
+  margin-left: auto;
+  align-self: center;
+  padding: 6px 14px;
+  font-size: 0.95rem;
+
 }
 
 .btn-login:hover {

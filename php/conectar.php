@@ -1,5 +1,5 @@
-<?php}
 <?php
+
 // 1. **Definir la información de conexión**
 $servidor = "localhost";
 $usuario = "root";
@@ -50,10 +50,5 @@ $stmt->close();
 // 6. **Cerrar la conexión**
 // Es una buena práctica liberar el recurso del servidor.
 $conexion->close();
-
-?>
-
-
-
 
 ?>
