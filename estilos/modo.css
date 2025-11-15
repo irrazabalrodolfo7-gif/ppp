@@ -1,0 +1,49 @@
+/* === MODO OSCURO / CLARO ===
+   Por defecto tu página está en modo oscuro.
+   Cuando el body tenga la clase .claro, se aplican los colores claros.
+*/
+
+/* 🌙 Modo Oscuro (tu modo actual) */
+:root {
+    --bg-color: rgb(10, 10, 71);
+    --text-color: antiquewhite;
+    --card-bg: rgb(0, 25, 165);
+    --button-bg: #f3bc3c;
+    --navbar-bg: linear-gradient(90deg, #2241f1, #61aae9);
+  }
+  
+  /* ☀️ Modo Claro */
+  body.claro {
+    --bg-color: #53adf6;
+    --text-color: #222;
+    --card-bg: #3326ec;
+    --button-bg: #ffd24c;
+    --navbar-bg: linear-gradient(90deg, #012395, #1f31d1);
+  }
+  
+  /* Aplicación de variables globales */
+  body {
+    background-color: var(--bg-color) !important;
+    color: var(--text-color) !important;
+  }
+  
+  /* Para las tarjetas como la del formulario */
+  .contacto {
+    background: var(--card-bg) !important;
+  }
+  
+  /* Navbar adaptada */
+  .navbar {
+    background: var(--navbar-bg) !important;
+  }
+  
+  /* Botón genérico */
+  .boton, .boton_volver, .contacto button {
+    background-color: var(--button-bg) !important;
+  }
+  
+  /* Opcional: animación al cambiar modo */
+  body {
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
