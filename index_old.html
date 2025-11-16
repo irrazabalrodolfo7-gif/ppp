@@ -241,21 +241,54 @@
 
 
 <script>
+  // =============================================================
+  //  SISTEMA DE SECCIONES OCULTAS / NAVEGACIÓN POR ANCLAS
+  // =============================================================
+  //  Este script permite que cuando el usuario hace click en un link
+  //  del tipo <a href="#algo">, se escondan todas las secciones
+  //  y solo se muestre la sección correspondiente a ese ID.
+  // =============================================================
+  
+  // -------------------------------------------------------------
+  // Seleccionamos todos los <a> cuyo href empieza con "#"
+  // Eso significa que apuntan a una sección dentro de la misma página.
+  // -------------------------------------------------------------
   const links = document.querySelectorAll('a[href^="#"]');
+  
+  // -------------------------------------------------------------
+  // Seleccionamos todas las secciones que queremos ocultar/mostrar.
+  // Deben tener la clase "seccion".
+  // -------------------------------------------------------------
   const secciones = document.querySelectorAll(".seccion");
-
+  
+  // -------------------------------------------------------------
+  // Recorremos TODOS los links
+  // -------------------------------------------------------------
   links.forEach(link => {
-    link.addEventListener("click", () => {
-      const destino = link.getAttribute("href");
-
-      // Ocultar todas
-      secciones.forEach(sec => sec.style.display = "none");
-
-      // Mostrar la seleccionada
-      document.querySelector(destino).style.display = "block";
-    });
+  
+      // A cada link le agregamos un evento "click"
+      link.addEventListener("click", () => {
+  
+          // Obtenemos el valor del href (por ej: "#inicio", "#contacto")
+          const destino = link.getAttribute("href");
+  
+          // ---------------------------------------------------------
+          // OCULTAR TODAS LAS SECCIONES
+          // ---------------------------------------------------------
+          // Recorremos cada una y la ponemos en display:none
+          secciones.forEach(sec => sec.style.display = "none");
+  
+          // ---------------------------------------------------------
+          // MOSTRAR SOLO LA SECCIÓN ELEGIDA
+          // ---------------------------------------------------------
+          // document.querySelector(destino) busca por ID el elemento
+          // cuyo ID coincide con el href, por ejemplo:
+          // destino = "#cursos" → busca <div id="cursos">
+          document.querySelector(destino).style.display = "block";
+  
+      });
   });
-</script>
+  </script>
 
  <script src="./js/modo.js"></script>
 
