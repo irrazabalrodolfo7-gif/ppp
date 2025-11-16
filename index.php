@@ -126,6 +126,8 @@ $mysqli->close();
 <header>
     <h1>Trayectos disponibles</h1>
     <a href="./backend/admin_panel.php" class="admin-btn">Admin</a>
+    <a href="./index_old.html" class="admin-btn">Volver a la pagina principal</a>
+
 </header>
 
 <div class="contenedor">
