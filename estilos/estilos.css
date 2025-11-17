@@ -79,8 +79,8 @@ img {
    /* Footer normal sin flotar */
    footer {
     width: 100%;
-    background: #000;
-    color: #fff;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 0.9rem;
     text-align: center;
     margin-top: 20px;

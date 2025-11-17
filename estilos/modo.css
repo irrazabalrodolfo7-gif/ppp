@@ -5,22 +5,23 @@
 
 /* 🌙 Modo Oscuro (tu modo actual) */
 :root {
-    --bg-color: rgb(10, 10, 71);
+    --bg-color: rgb(4, 4, 73);
     --text-color: antiquewhite;
     --card-bg: rgb(0, 25, 165);
     --button-bg: #f3bc3c;
-    --navbar-bg: linear-gradient(90deg, #2241f1, #61aae9);
+    --navbar-bg: linear-gradient(90deg, #0026ff, #2079c7);
   }
-  
+
   /* ☀️ Modo Claro */
-  body.claro {
-    --bg-color: #53adf6;
-    --text-color: #222;
-    --card-bg: #3326ec;
-    --button-bg: #f3bc3c;
-    --navbar-bg: linear-gradient(90deg, #012395, #1f31d1);
-  }
-  
+   /* ☀️ Modo Claro */
+body.claro {
+  --bg-color: #506af8;
+  --text-color: #000000;
+  --card-bg: #1438ac;
+  --button-bg: #f3bc3c;
+  --navbar-bg: linear-gradient(90deg, #5bbdf5, #1c37d0); 
+}
+
   /* Aplicación de variables globales */
   body {
     background-color: var(--bg-color) !important;
