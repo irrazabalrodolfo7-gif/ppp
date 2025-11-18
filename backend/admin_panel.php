@@ -29,12 +29,15 @@ if (!isset($_SESSION['admin']) || $_SESSION['admin'] !== true) {
         /* ESTILOS SIMPLES PARA QUE SE VEA LINDO */
         body {
             font-family: Arial, sans-serif;
-            background: #f0f0f0;
+            background: #0a0a47;
             text-align: center;
             padding: 40px;
         }
+        p{
+            color: white;
+        }
         h1 {
-            color: #333;
+            color: white;
         }
         .btn {
             display: inline-block;

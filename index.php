@@ -22,102 +22,114 @@ $mysqli->close();
     <title>Trayectos CFP</title>
     
     <style>
+        /* ==== ESTILO GENERAL ==== */
         body {
-            margin: 0;
-            background: #0a0a47;
-            font-family: 'Arial', sans-serif;
-            color: white;
+            margin: 0; /* Saca márgenes del navegador */
+            background: #0a0a47; /* Fondo azul oscuro */
+            color: white; /* Texto blanco */
+            font-family: Arial, sans-serif; /* Fuente simple */
         }
 
+        /* ==== HEADER ==== */
         header {
-            background: #06103d;
-            padding: 20px 30px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+            background: #06103d; /* Banda más oscura arriba */
+            padding: 20px; /* Espaciado interno */
+            display: flex; /* Ubica elementos en fila */
+            justify-content: space-between; /* Los separa a los extremos */
+            align-items: center; /* Centra vertical */
         }
 
         header h1 {
-            margin: 0;
-            font-size: 28px;
-            letter-spacing: 1px;
+            margin: 0; /* Saca el margen default */
+            font-size: 26px; /* Tamaño del título */
         }
 
+        /* ==== BOTONES DEL HEADER ==== */
         .admin-btn {
-            background: #ffb300;
-            padding: 10px 18px;
-            color: #000;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 6px;
-            transition: 0.3s;
+            background: #ffb300; /* Amarillo */
+            padding: 10px 16px; /* Tamaño del botón */
+            color: black; /* Texto negro para buen contraste */
+            text-decoration: none; /* Quita subrayado */
+            border-radius: 6px; /* Bordes redondeados */
+            font-weight: bold; /* Texto fuerte */
         }
 
-        .admin-btn:hover {
-            background: #ffd35c;
-        }
-
+        /* ==== CONTENEDOR PRINCIPAL ==== */
         .contenedor {
-            max-width: 1100px;
-            margin: auto;
-            padding: 30px 20px;
+            max-width: 1000px; /* Ancho máximo */
+            margin: auto; /* Centra horizontal */
+            padding: 20px; /* Espaciado interno */
         }
 
+        /* ==== TARJETA DE TRAYECTO ==== */
         .tarjeta {
-            display: flex;
-            background: rgba(255,255,255,0.12);
-            border-radius: 12px;
-            margin-bottom: 25px;
-            overflow: hidden;
-            backdrop-filter: blur(4px);
-            border: 1px solid rgba(255,255,255,0.15);
-            transition: transform 0.2s;
+            display: flex; /* Imagen + texto en fila */
+            background: rgba(255,255,255,0.1); /* Fondo semi transparente */
+            margin-bottom: 20px; /* Espacio entre tarjetas */
+            border-radius: 10px; /* Bordes redondeados */
+            overflow: hidden; /* Para que la imagen no sobresalga */
         }
 
-        .tarjeta:hover {
-            transform: scale(1.02);
-        }
-
+        /* ==== IMAGEN DE CADA CURSO ==== */
         .tarjeta img {
-            width: 260px;
-            height: 100%;
-            object-fit: cover;
+            width: 240px; /* Tamaño fijo */
+            height: 100%; /* Mantener proporcion */
+            object-fit: cover; /* Recorta bien la imagen */
         }
 
+        /* ==== INFORMACIÓN DEL CURSO ==== */
         .info {
-            padding: 20px;
-            flex: 1;
+            padding: 20px; /* Espaciado interior */
+            flex: 1; /* Ocupa todo el espacio restante */
         }
 
         .titulo-trayecto {
-            font-size: 24px;
-            font-weight: bold;
-            margin: 0 0 10px;
+            margin: 0 0 10px; /* Abajo un espacio */
+            font-size: 22px; /* Tamaño del título */
         }
 
         .descripcion {
-            font-size: 16px;
-            opacity: 0.9;
-            line-height: 1.5;
+            font-size: 15px; /* Tamaño del texto */
+            line-height: 1.4; /* Mejor lectura */
         }
 
+        /* ==== HORARIO ==== */
         .horario {
-            background: #ffb300;
-            padding: 8px 14px;
-            color: #000;
-            display: inline-block;
-            font-weight: bold;
-            margin-top: 15px;
-            border-radius: 6px;
+            margin-top: 12px; /* Espacio arriba */
+            background: #ffb300; /* Fondo amarillo */
+            padding: 6px 12px; /* Tamaño del recuadro */
+            border-radius: 6px; /* Bordes redondeados */
+            color: black; /* Texto oscuro */
+            font-weight: bold; /* Resalta */
+            display: inline-block; /* Se comporta como botón */
         }
 
+        /* ==== MENSAJE SIN DATOS ==== */
         .no-data {
-            text-align: center;
-            margin-top: 50px;
-            font-size: 22px;
-            opacity: 0.8;
+            text-align: center; /* Centrado */
+            margin-top: 40px; /* Espacio */
+            font-size: 20px; /* Texto más grande */
         }
+
+        /* ==== RESPONSIVE MODO CELULAR ==== */
+        @media (max-width: 700px) {
+
+            .tarjeta {
+                flex-direction: column; /* Imagen arriba, texto abajo */
+            }
+
+            .tarjeta img {
+                width: 100%; /* Imagen ocupa todo el ancho */
+                height: 200px; /* Alto fijo */
+            }
+
+            header {
+                flex-direction: column; /* Poner título arriba y botones abajo */
+                gap: 10px; /* Espacio entre elementos */
+                text-align: center;
+            }
+        }
+
     </style>
 </head>
 
@@ -125,9 +137,10 @@ $mysqli->close();
 
 <header>
     <h1>Trayectos disponibles</h1>
-    <a href="./backend/admin_panel.php" class="admin-btn">Admin</a>
-    <a href="./index_old.html" class="admin-btn">Volver a la pagina principal</a>
 
+    <!-- Botones superiores -->
+    <a href="./backend/admin_panel.php" class="admin-btn">Admin</a>
+    <a href="./index_old.html" class="admin-btn">Volver</a>
 </header>
 
 <div class="contenedor">
@@ -138,8 +151,10 @@ $mysqli->close();
     <?php foreach ($trayectos as $t): ?>
         <div class="tarjeta">
 
+            <!-- Imagen del trayecto -->
             <img src="./img/<?php echo htmlspecialchars($t['imagen']); ?>" alt="Imagen trayecto">
 
+            <!-- Texto del trayecto -->
             <div class="info">
 
                 <h2 class="titulo-trayecto">
@@ -159,8 +174,6 @@ $mysqli->close();
         </div>
     <?php endforeach; ?>
 <?php endif; ?>
-
 </div>
-
 </body>
 </html>
